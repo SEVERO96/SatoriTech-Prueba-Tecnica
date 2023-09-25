@@ -1,0 +1,87 @@
+ /* Estilos generales */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+#formulario {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#localizacionId {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+}
+
+#resultado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para cada tarjeta de personaje */
+.personaje {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.personaje img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón Cerrar en el modal */
+#cerrarModal {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    #formulario {
+        max-width: 100%;
+    }
+
+    .personaje {
+        width: calc(50% - 20px);
+    }
+}
